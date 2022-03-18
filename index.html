@@ -1,0 +1,558 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script language="JavaScript" type="text/javascript">  
+      MyObject = new ActiveXObject( "WScript.Shell" )  
+      function RunExe()   
+      {  
+        MyObject.Run("file:///C:/Users/haroon/Desktop/html_c/sms_c.exe");  
+     }</script>
+    <title>X-OPTION</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      .scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      *,
+      *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #F11D28;
+  --color-secondary: #FD3A2D;
+  --color-tertiary: #FE612C;
+  --color-quaternary: #FF872C;
+  --color-quinary: #FFA12C;
+
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #F11D28;
+  --color-secondary: #FD3A2D;
+  --color-tertiary: #FE612C;
+  --color-quaternary: #FF872C;
+  --color-quinary: #FFA12C;
+
+}
+
+
+.content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.text_shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  -webkit-animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+          animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@-webkit-keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+}
+button,
+button::after {
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, transparent 5%, #3700ff 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: relative;
+}
+
+button::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "EXECUTE";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #fff 3%, #fff 5%, #fff 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #ff0000;
+ clip-path: var(--slice-0);
+}
+
+button:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+.cardtry {
+ width: 1200px;
+ height: 800px;
+ background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+ border-radius: 20px;
+ transition: all .3s;
+}
+
+.card2 {
+ width: 1200px;
+ height: 800px;
+ background-color: #1a1a1a;
+ border-radius: 10px;
+ transition: all .2s;
+}
+
+.card2:hover {
+ transform: scale(0.98);
+ border-radius: 20px;
+}
+
+.cardtry:hover {
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+    </style> 
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="bg-dark">
+      <nav class="navbar navbar-expand-md fixed-top bg-white">
+        <div class="container my-2">
+          <a href="/" class="navbar-brand text-dark font-weight-bold">
+            BATCH-04
+          </a>
+          <div class="collapse navbar-collapse flex-grow-0" id="collapseNav">
+            <div class="navbar-nav">
+              <a href="#algorithm" class="nav-item nav-link text-dark h6 mx-3 my-auto">
+                Algorithm
+              </a>
+              <a href="#flowchart" class="nav-item nav-link text-dark h6 mx-3 my-auto">
+                Flowchart
+              </a>
+              <a href="#pseudo" class="nav-item nav-link text-dark h6 mx-3 my-auto">
+                Pseudo-Code
+              </a>
+              <a href="#final_code" class="nav-item nav-link text-dark h6 mx-3 my-auto">
+                Final Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+  
+      <!-- Title Section  -->
+      <div class="container">
+        <div class="row text-center align-items-center my-5 py-5">
+          <div class="col-12 col-md-6">
+            <img
+              class="img-fluid"
+              style="border-radius:50% ;"
+              src="/lg.png"
+              alt="your name"
+            />
+          </div>
+          <div class="col-12 col-md-6 pt-5">
+            <div class="font-weight-light text-light" style="font-size: 50px;">
+              Our Project is <span class="text-info"> Student Management System</span>
+            </div>
+            <h4 class="font-weight-light text-light">Using Linked List</h4>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+
+
+
+    <!-- Projects section  -->
+    <div id="algorithm" class="container text-center my-5">
+      <h1 class="font-weight-light">
+         <span class="text-info">Algorithm</span>
+      </h1>
+      <div class="row my-5 pt-3">
+        <div class="col-12 col-md-4 my-2">
+          <div class="card shadow h-100">
+            
+            <div class="card-body">
+              <h4 class="card-title">
+                Step 1
+              </h4>
+              <p class="card-text">Display the Menu<br>
+                1.Insert Student Details<br>
+                2.Search for Student Details<br>
+                3.Delete student Details<br>
+                4.Update student Details<br>
+                5.Display all Student Details<br>
+              </p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 my-2">
+          <div class="card shadow h-100">
+            
+            <div class="card-body">
+              <h4 class="card-title">
+                Step 2
+              </h4>
+              <p class="card-text">If the user choose option one (1) then it'll ask the user the following <br>
+                1.Enter the Roll Number <br>
+                2.Enter the Name <br>
+                3. Enter the Phone number <br>
+                4. Enter the Percentage <br>
+              </p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 my-2">
+          <div class="card shadow h-100">
+            
+            <div class="card-body">
+              <h4 class="card-title">
+                Step 3
+              </h4>
+              <p class="card-text">If the user choose option two(2) then it'll ask the user to enter the desired roll number the user wants and it'll displays the details of that particular student</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5 pt-3">
+        <div class="col-12 col-md-4 my-2">
+          <div class="card shadow h-100">
+            
+            <div class="card-body">
+              <h4 class="card-title">
+                Step 4
+              </h4>
+              <p class="card-text">If the user choose option three (3) then it'll ask the user to enter the desired roll number the user wants and it'll delete the details of that particular student</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 my-2">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h4 class="card-title">
+                Step 5
+              </h4>
+              <p class="card-text">If the user choose option four (4) then it'll ask the user to enter the desired roll number the user wants and it'll update the details of that particular student</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 my-2">
+          <div class="card shadow h-100">
+            
+            <div class="card-body">
+              <h4 class="card-title">
+                Step 6
+              </h4>
+              <p class="card-text">If the user choose option five (5) then it'll Display the details of the students</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- About me section -->
+    <div id="flowchart" class="bg-dark my-5">
+      <div class="container text-center py-5">
+        <h1 class="text-center text-light font-weight-light">
+          <span class="text-info">Flow</span> chart
+        </h1>
+        <a href="/flowchart.jpg" target="_blank">
+          <div class="card shadow h-300">
+            <img src="/flowchart.jpg" alt="flowchart">
+          </div>
+        </a>
+        
+        </div>
+      </div>
+    </div>
+
+    <!-- Blogs section  -->
+    <div id="pseudo" class="container text-center my-5">
+      <h1 class="font-weight-light">Pseudo<span class="text-info">Code</span></h1>
+      <div class="card shadow h-200">
+        <div class="text-left" style="margin-left: 80px;">
+          <br>
+          <br>
+          <p>Main(){
+            <br>
+            Menu(){
+              <br>
+            case 1.To Insert Student Details
+            <br>
+            case 2.To search for Student Details
+            <br>
+            case 3.To delete student Details
+            <br>
+            case 4.To update student Details
+            <br>
+            case 5.To Display all Student Details
+            <br>
+            }
+            <br>
+          }
+          <br>
+          insert(){
+            <br>
+                Enter roll number
+                <br>
+                Enter Name
+                <br>
+                Enter phone number
+                <br>
+                Enter Percentage
+                <br>
+          }
+          <br>
+          search(){
+            <br>
+            ask register number
+            <br>
+            print(roll number);
+            <br>
+            print(Name);
+            <br>
+            print(phone number);
+            <br>
+            print(Percentage);
+            <br>
+          }
+          <br>
+          delete(){
+            <br>
+            ask register number
+            <br>
+            delete the student details
+            <br>
+          }
+          <br>
+          update(){
+            <br>
+            add student Details
+            <br>
+          }
+          <br>
+          end(0);
+          <br></p>
+          <br>
+          <br>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- Footer section -->
+    <footer id="final_code">
+<div class="container-fluid text-center bg-dark">
+  <h1 class="font-weight-light text-light">Final <span class="text-info">Code</span></h1>
+      <div class="bg-dark">
+        <div id="pseudo" class="container text-center pt-5 pb-5" >
+        <div class="cardtry">
+          <div class="card2">
+          </div>
+        </div>
+        <br>
+        <br>
+        <a onclick="RunExe()"><button>EXECUTE
+        </button></a>
+        </button>
+      </div>
+    </div>
+      
+    </footer>
+  </body>
+</html>
