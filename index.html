@@ -201,6 +201,7 @@ font: 24px/36px sans-serif;
 width: 1000px;
 height: 800px;
 overflow: scroll;
+margin-left: 50px;
 }
 
 /* Scrollbar styles */
@@ -210,13 +211,13 @@ height: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-border: 1px solid yellowgreen;
+border: 1px solid #00ADB5;
 border-radius: 10px;
-background: #88ba1c;  
+background: #00ADB5;  
 }
 
 ::-webkit-scrollbar-track {
-border: 1px solid yellowgreen;
+border: 1px solid #00ADB5;
 border-radius: 10px;
 }
 
@@ -225,16 +226,17 @@ border-radius: 10px;
  display: inline-block;
  border-radius: 7px;
  border: none;
- background: yellowgreen;
+ background: #00ADB5;
  color: white;
  font-family: inherit;
  text-align: center;
  font-size: 13px;
- box-shadow: 0px 14px 56px -11px #88ba1c;
+ box-shadow: 0px 14px 56px -11px #00ADB5;
  width: 10em;
  padding: 1em;
  transition: all 0.4s;
  cursor: pointer;
+ 
 }
 
 .button span {
@@ -265,8 +267,8 @@ border-radius: 10px;
   </head>
   <body>
     <!-- Navbar -->
-    <div class="bg-dark">
-      <nav class="navbar navbar-expand-md fixed-top bg-white">
+    <div style="background-color: #222831;">
+      <nav class="navbar navbar-expand-md fixed-top" style="background-color: #EEEEEE;">
         <div class="container my-2">
           <a href="/" class="navbar-brand text-dark font-weight-bold">
             BATCH-04
@@ -303,7 +305,7 @@ border-radius: 10px;
           </div>
           <div class="col-12 col-md-6 pt-5">
             <div class="font-weight-light text-light" style="font-size: 50px;">
-              Our Project is <span class="text-info"> Student Management System</span>
+              Our Project is <span style="color: #FFD700;"> Student Management System</span>
             </div>
             <h4 class="font-weight-light text-light">Using Linked List</h4>
           </div>
@@ -318,7 +320,7 @@ border-radius: 10px;
     <!-- Projects section  -->
     <div id="algorithm" class="container text-center my-5">
       <h1 class="font-weight-light">
-         <span class="text-info">Algorithm</span>
+         <span class="text-info" style="font-size: 75px;">Algorithm</span>
       </h1>
       <div class="row my-5 pt-3">
         <div class="col-12 col-md-4 my-2">
@@ -410,10 +412,10 @@ border-radius: 10px;
     </div>
 
     <!-- About me section -->
-    <div id="flowchart" class="bg-dark my-5">
+    <div id="flowchart" class="my-5" style="background-color: #222831;">
       <div class="container text-center py-5">
         <h1 class="text-center text-light font-weight-light">
-          <span class="text-info">Flow</span> chart
+          <span style="color: #FFD700;">Flow</span> chart
         </h1>
         <a href="/flowchart.jpg" target="_blank">
           <div class="card shadow h-300">
@@ -501,13 +503,13 @@ border-radius: 10px;
       </div>
     </div>
     <!-- Footer section -->
-    <footer id="final_code">
-<div class="container-fluid text-center bg-dark">
-  <h1 class="font-weight-light text-light">Final <span class="text-info">Code</span></h1>
-      <div class="bg-dark">
-        <h2 class="text-light">Student Management System</h2>
+    
+<div class="container-fluid text-center" id="final_code" style="background-color: #222831;">
+  <h1 class="font-weight-light text-light">Final <span style="color: #FFD700;">Code</span></h1>
+      <div>
+        <h2 style="color: #DEEDF0;">Student Management System</h2>
         <div id="pseudo" class="container text-center py-5 pb-5" >
-          <div class="myBox card bg-dark shadow-lg h-100 text-light text-left rounded" style="white-space: pre;">
+          <div class="myBox card shadow h-100 text-light text-left" style="white-space: pre; background-color: #393E46;">
               #include&lt;stdlib.h>
               #include&lt;string.h>
               #include&lt;stdio.h>
@@ -847,6 +849,6 @@ border-radius: 10px;
       </div>
     </div>
     </div>
-    </footer>
+
   </body>
 </html>
