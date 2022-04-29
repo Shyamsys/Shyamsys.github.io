@@ -1,520 +1,153 @@
-<html lang="en">
+<!DOCTYPE html>
+<html style="font-size: 16px;">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <title>X-OPTION</title>
-    <style>
-      html{
-        scroll-behavior: smooth;
-      }
-      .scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      *,
-      *,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-:root {
-  --color-primary: #F11D28;
-  --color-secondary: #FD3A2D;
-  --color-tertiary: #FE612C;
-  --color-quaternary: #FF872C;
-  --color-quinary: #FFA12C;
-
-}
-
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-:root {
-  --color-primary: #F11D28;
-  --color-secondary: #FD3A2D;
-  --color-tertiary: #FE612C;
-  --color-quaternary: #FF872C;
-  --color-quinary: #FFA12C;
-
-}
-
-
-.content {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-
-.text_shadows {
-  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-  font-family: bungee, sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: calc(2rem + 5vw);
-  text-align: center;
-  margin: 0;
-  color: var(--color-primary);
-  -webkit-animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
-          animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
-  letter-spacing: 0.4rem;
-}
-
-@-webkit-keyframes shadows {
-  0% {
-    text-shadow: none;
-  }
-  10% {
-    text-shadow: 3px 3px 0 var(--color-secondary);
-  }
-  20% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
-  }
-  30% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
-  }
-  40% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-  }
-  50% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-  }
-  60% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-  }
-  70% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
-  }
-  80% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
-  }
-  90% {
-    text-shadow: 3px 3px 0 var(--color-secondary);
-  }
-  100% {
-    text-shadow: none;
-  }
-}
-
-@keyframes shadows {
-  0% {
-    text-shadow: none;
-  }
-  10% {
-    text-shadow: 3px 3px 0 var(--color-secondary);
-  }
-  20% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
-  }
-  30% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
-  }
-  40% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-  }
-  50% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-  }
-  60% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-  }
-  70% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
-  }
-  80% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
-  }
-  90% {
-    text-shadow: 3px 3px 0 var(--color-secondary);
-  }
-  100% {
-    text-shadow: none;
-  }
-}
-@-webkit-keyframes move {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  40% {
-    transform: translate(-12px, -12px);
-  }
-  50% {
-    transform: translate(-12px, -12px);
-  }
-  60% {
-    transform: translate(-12px, -12px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
-@keyframes move {
-  0% {
-    transform: translate(0px, 0px);
-  }
-}
-.fc {
- background: #FBCA1F;
- font-family: inherit;
- padding: 0.6em 1.3em;
- font-weight: 900;
- font-size: 18px;
- border: 3px solid black;
- border-radius: 0.4em;
- box-shadow: 0.1em 0.1em;
- margin-top: 50px;
-}
-
-.fc:hover {
- transform: translate(-0.05em, -0.05em);
- box-shadow: 0.15em 0.15em;
-}
-
-.fc:active {
- transform: translate(0.05em, 0.05em);
- box-shadow: 0.05em 0.05em;
-}
-
-/* Box styles */
-.myBox {
-border: none;
-padding: 5px;
-font: 24px/36px sans-serif;
-width: 1000px;
-height: 800px;
-overflow: scroll;
-margin-left: 50px;
-}
-
-/* Scrollbar styles */
-::-webkit-scrollbar {
-width: 12px;
-height: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-border: 1px solid #00ADB5;
-border-radius: 10px;
-background: #00ADB5;  
-}
-
-::-webkit-scrollbar-track {
-border: 1px solid #00ADB5;
-border-radius: 10px;
-}
-
-/* From cssbuttons.io by @Custyyyy */
-.button {
- display: inline-block;
- border-radius: 7px;
- border: none;
- background: #00ADB5;
- color: white;
- font-family: inherit;
- text-align: center;
- font-size: 13px;
- box-shadow: 0px 14px 56px -11px #00ADB5;
- width: 10em;
- padding: 1em;
- transition: all 0.4s;
- cursor: pointer;
- 
-}
-
-.button span {
- cursor: pointer;
- display: inline-block;
- position: relative;
- transition: 0.4s;
-}
-
-.button span:after {
- content: 'for free';
- position: absolute;
- opacity: 0;
- top: 0;
- right: -20px;
- transition: 0.7s;
-}
-
-.button:hover span {
- padding-right: 3.55em;
-}
-
-.button:hover span:after {
- opacity: 4;
- right: 0;
-}
-    </style> 
-  </head>
-  <body>
-    <!-- Navbar -->
-    <div style="background-color: #222831;">
-      <nav class="navbar navbar-expand-md fixed-top" style="background-color: #EEEEEE;">
-        <div class="container my-2">
-          <a href="/" class="navbar-brand text-dark font-weight-bold">
-            BATCH-04
-          </a>
-          <div class="collapse navbar-collapse flex-grow-0" id="collapseNav">
-            <div class="navbar-nav">
-              <a href="#algorithm" class="nav-item nav-link text-dark h6 mx-3 my-auto">
-                Algorithm
-              </a>
-              <a href="#flowchart" class="nav-item nav-link text-dark h6 mx-3 my-auto">
-                Flowchart
-              </a>
-              <a href="#pseudo" class="nav-item nav-link text-dark h6 mx-3 my-auto">
-                Pseudo-Code
-              </a>
-              <a href="#final_code" class="nav-item nav-link text-dark h6 mx-3 my-auto">
-                Final Code
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-  
-      <!-- Title Section  -->
-      <div class="container">
-        <div class="row text-center align-items-center my-5 py-5">
-          <div class="col-12 col-md-6">
-            <img
-              class="img-fluid"
-              style="border-radius:50% ;"
-              src="/lg.png"
-              alt="your name"
-            />
-          </div>
-          <div class="col-12 col-md-6 pt-5">
-            <div class="font-weight-light text-light" style="font-size: 50px;">
-              Our Project is <span style="color: #FFD700;"> Student Management System</span>
-            </div>
-            <h4 class="font-weight-light text-light">Using Linked List</h4>
-          </div>
-        </div>
-      </div>
-      <br>
-      <br>
-    </div>
-
-
-
-    <!-- Projects section  -->
-    <div id="algorithm" class="container text-center my-5">
-      <h1 class="font-weight-light">
-         <span class="text-info" style="font-size: 75px;">Algorithm</span>
-      </h1>
-      <div class="row my-5 pt-3">
-        <div class="col-12 col-md-4 my-2">
-          <div class="card shadow h-100">
-            
-            <div class="card-body">
-              <h4 class="card-title">
-                Step 1
-              </h4>
-              <p class="card-text">Display the Menu<br>
-                1.Insert Student Details<br>
-                2.Search for Student Details<br>
-                3.Delete student Details<br>
-                4.Update student Details<br>
-                5.Display all Student Details<br>
-              </p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 my-2">
-          <div class="card shadow h-100">
-            
-            <div class="card-body">
-              <h4 class="card-title">
-                Step 2
-              </h4>
-              <p class="card-text">If the user choose option one (1) then it'll ask the user the following <br>
-                1.Enter the Roll Number <br>
-                2.Enter the Name <br>
-                3. Enter the Phone number <br>
-                4. Enter the Percentage <br>
-              </p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 my-2">
-          <div class="card shadow h-100">
-            
-            <div class="card-body">
-              <h4 class="card-title">
-                Step 3
-              </h4>
-              <p class="card-text">If the user choose option two(2) then it'll ask the user to enter the desired roll number the user wants and it'll displays the details of that particular student</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row my-5 pt-3">
-        <div class="col-12 col-md-4 my-2">
-          <div class="card shadow h-100">
-            
-            <div class="card-body">
-              <h4 class="card-title">
-                Step 4
-              </h4>
-              <p class="card-text">If the user choose option three (3) then it'll ask the user to enter the desired roll number the user wants and it'll delete the details of that particular student</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 my-2">
-          <div class="card shadow h-100">
-            <div class="card-body">
-              <h4 class="card-title">
-                Step 5
-              </h4>
-              <p class="card-text">If the user choose option four (4) then it'll ask the user to enter the desired roll number the user wants and it'll update the details of that particular student</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 my-2">
-          <div class="card shadow h-100">
-            
-            <div class="card-body">
-              <h4 class="card-title">
-                Step 6
-              </h4>
-              <p class="card-text">If the user choose option five (5) then it'll Display the details of the students</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
-
-    <!-- About me section -->
-    <div id="flowchart" class="my-5" style="background-color: #222831;">
-      <div class="container text-center py-5">
-        <h1 class="text-center text-light font-weight-light">
-          <span style="color: #FFD700;">Flow</span> chart
-        </h1>
-        <a href="/flowchart.jpg" target="_blank">
-          <div class="card shadow h-300">
-            <img src="/flowchart.jpg" alt="flowchart">
-          </div>
-        </a>
-       <a href="flowchart.html" target="_blank"><button class="fc"> FlowChart
-        </button></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Blogs section  -->
-    <div id="pseudo" class="container text-center my-5">
-      <h1 class="font-weight-light">Pseudo<span class="text-info">Code</span></h1>
-      <div class="card shadow h-200">
-        <div class="text-left" style="margin-left: 80px;">
-          <br>
-          <br>
-          <p>Main(){
-            <br>
-            Menu(){
-              <br>
-            case 1.To Insert Student Details
-            <br>
-            case 2.To search for Student Details
-            <br>
-            case 3.To delete student Details
-            <br>
-            case 4.To update student Details
-            <br>
-            case 5.To Display all Student Details
-            <br>
-            }
-            <br>
-          }
-          <br>
-          insert(){
-            <br>
-                Enter roll number
-                <br>
-                Enter Name
-                <br>
-                Enter phone number
-                <br>
-                Enter Percentage
-                <br>
-          }
-          <br>
-          search(){
-            <br>
-            ask register number
-            <br>
-            print(roll number);
-            <br>
-            print(Name);
-            <br>
-            print(phone number);
-            <br>
-            print(Percentage);
-            <br>
-          }
-          <br>
-          delete(){
-            <br>
-            ask register number
-            <br>
-            delete the student details
-            <br>
-          }
-          <br>
-          update(){
-            <br>
-            add student Details
-            <br>
-          }
-          <br>
-          end(0);
-          <br></p>
-          <br>
-          <br>
-
-        </div>
-
-      </div>
-    </div>
-    <!-- Footer section -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="METAVERSEJUMP INTO THE MAGIC WORLD, BEHIND METAVERSE, ​AI &amp;amp; Digital Platform">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Home.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.9.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     
-<div class="container-fluid text-center" id="final_code" style="background-color: #222831;">
-  <h1 class="font-weight-light text-light">Final <span style="color: #FFD700;">Code</span></h1>
-      <div>
-        <h2 style="color: #DEEDF0;">Student Management System</h2>
-        <br>
-        <br>
-        <a href="sms_c.exe" download rel="noopener noreferrer" target="_blank">
-          <button class="button text-center" style="vertical-align:middle; "><span>Download</span></button></a>
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-overlap u-overlap-contrast u-overlap-transparent u-xl-mode"><header class="u-clearfix u-header u-sticky u-sticky-9df1 u-header" id="sec-8d42"><div class="u-align-left u-clearfix u-sheet u-sheet-1"></div></header>
+    <section class="u-align-center u-clearfix u-image u-shading u-section-1" id="carousel_9c93" src="" data-image-width="1782" data-image-height="1080">
+      <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+        <h1 class="infinite u-custom-font u-font-montserrat u-hover-feature u-text u-title u-text-1" data-animation-name="pulse" data-animation-duration="1000" data-animation-direction="">METAVERSE<br>JUMP INTO THE MAGIC WORLD
+        </h1>
+        <a href="https://nicepage.app" class="u-active-white u-border-white u-btn u-btn-round u-button-style u-hover-feature u-hover-palette-1-light-2 u-none u-radius-11 u-text-active-black u-text-hover-black u-text-palette-3-base u-btn-1">Lets jump&nbsp;<span class="u-icon"><svg class="u-svg-content" viewBox="0 0 54.908 54.908" x="0px" y="0px" style="width: 1em; height: 1em;"><g><path d="M54.615,19.123c-7.243-7.244-16.89-11.233-27.161-11.233S7.537,11.878,0.293,19.123c-0.391,0.391-0.391,1.023,0,1.414
+		s1.023,0.391,1.414,0C8.573,13.67,17.717,9.889,27.454,9.889s18.881,3.781,25.747,10.647c0.195,0.195,0.451,0.293,0.707,0.293
+		s0.512-0.098,0.707-0.293C55.006,20.146,55.006,19.513,54.615,19.123z"></path><path d="M6.171,25c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293
+		c10.955-10.956,28.781-10.956,39.737,0c0.391,0.391,1.023,0.391,1.414,0s0.391-1.023,0-1.414C37.002,13.266,17.907,13.264,6.171,25
+		z"></path><path d="M27.454,24.508c-5.825,0-11.295,2.263-15.404,6.371c-0.391,0.391-0.391,1.023,0,1.414s1.023,0.391,1.414,0
+		c3.731-3.73,8.699-5.785,13.99-5.785c5.291,0,10.259,2.055,13.99,5.785c0.195,0.195,0.451,0.293,0.707,0.293
+		s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414C38.75,26.771,33.279,24.508,27.454,24.508z"></path><path d="M27.454,33.916c-3.612,0-6.551,2.939-6.551,6.552s2.939,6.552,6.551,6.552c3.613,0,6.552-2.939,6.552-6.552
+		S31.067,33.916,27.454,33.916z"></path>
+</g></svg><img></span>
+        </a>
       </div>
-    </div>
-    </div>
-
+      
+      
+    </section>
+    <section class="u-align-right u-clearfix u-grey-5 u-section-2" id="carousel_6039">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-container-style u-expanded-width-xs u-group u-image u-image-tiles u-image-1">
+          <div class="u-container-layout u-container-layout-1"></div>
+        </div>
+        <img src="images/sa-min.jpg" alt="" class="u-expanded-width-xs u-image u-image-default u-image-2">
+        <div class="u-layout-grid u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-1">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <h4 class="u-align-center u-text u-text-1">Blockchain</h4>
+                <img class="u-image u-image-contain u-image-default u-image-3" src="images/blockchain_2.gif" alt="" data-image-width="800" data-image-height="600">
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-2">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <h4 class="u-align-center u-text u-text-2">vr/ar</h4>
+                <img class="u-image u-image-default u-image-4" src="images/7xNPp6.gif" alt="" data-image-width="800" data-image-height="600">
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
+              <div class="u-container-layout u-similar-container u-container-layout-4">
+                <h4 class="u-align-center u-text u-text-3">cloud computing</h4>
+                <img class="u-image u-image-default u-image-5" src="images/cloud_computing.gif" alt="" data-image-width="800" data-image-height="600">
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-4">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <h4 class="u-align-center u-text u-text-4">5g</h4>
+                <img class="u-image u-image-default u-image-6" src="images/o2_5g_video_2_dribbble_final.gif" alt="" data-image-width="800" data-image-height="600">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-3" id="carousel_e78b">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">BEHIND METAVERSE</h2>
+        <div class="u-border-2 u-border-palette-1-base u-shape u-shape-svg u-text-grey-5 u-shape-1">
+          <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 50" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0c8e"></use></svg>
+          <svg class="u-svg-content" viewBox="-1 -1 162 52" x="0px" y="0px" id="svg-0c8e" style="enable-background:new 0 0 160 50;"><path d="M133,26.7c-13.9,9.7-25.8,9.7-39.8,0c-9.1-6.3-16.8-6.3-25.9,0c-13.8,9.6-25.1,9.6-38.9,0c-9.2-6.4-15.4-6.4-24.6,0L0,22
+	c11.2-7.8,20.6-8.1,32.2,0c11,7.6,19,8.5,31.3,0c11.6-8.1,22.4-7.7,33.5,0c11.4,8,20.3,8.3,32.2,0c11.6-8.1,19.2-8.1,30.8,0
+	l-3.8,4.7C146.9,20.2,142.3,20.2,133,26.7z M133,10.8c-13.9,9.7-25.8,9.7-39.8,0c-9.1-6.3-16.8-6.3-25.9,0
+	c-13.8,9.6-25.1,9.6-38.9,0c-9.2-6.4-15.4-6.4-24.6,0L0,6.1c11.2-7.8,20.6-8.1,32.2,0c11,7.6,19,8.5,31.3,0C75.1-2,85.9-1.6,97,6.1
+	c11.4,8,20.3,8.3,32.2,0C140.8-2,148.4-2,160,6.1l-3.8,4.7C146.9,4.3,142.3,4.3,133,10.8z M32.2,38c11,7.6,19,8.5,31.3,0
+	c11.6-8.1,22.4-7.7,33.5,0c11.4,8,20.3,8.3,32.2,0c11.6-8.1,19.2-8.1,30.8,0l-3.8,4.7c-9.3-6.5-13.9-6.5-23.3,0
+	c-13.9,9.7-25.8,9.7-39.8,0c-9.1-6.3-16.8-6.3-25.9,0c-13.8,9.6-25.1,9.6-38.9,0c-9.2-6.4-15.4-6.4-24.6,0L0,38
+	C11.2,30.2,20.6,29.9,32.2,38z"></path></svg>
+        </div>
+        <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-left u-container-style u-list-item u-repeater-item u-white u-list-item-1">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <h5 class="u-text u-text-default u-text-2"> VIRTUAL REALITY(VR)</h5>
+                <p class="u-text u-text-3"> Virtual Reality (VR) is&nbsp;<b>a computer-generated environment with scenes and objects that appear to be real, making the user feel they are immersed in their surroundings</b>.
+                </p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-2">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <h5 class="u-text u-text-default u-text-4">ARGUMENTED REALITY (AR)</h5>
+                <p class="u-text u-text-5">Augmented reality (AR) is<span style="font-weight: 700;">&nbsp;<span style="font-weight: 700;"><b>an enhanced version of the real physical world that is achieved through the use of digital visual elements, sound, or other sensory stimuli delivered via technology<span style="font-weight: 400;">
+                          <span style="font-weight: 700;"></span>
+                        </span></b>.
+                    </span>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <h5 class="u-text u-text-default u-text-6">BLOCKCHAIN</h5>
+                <p class="u-text u-text-7"> Blockchain technology is most simply defined as&nbsp;<b>a decentralized, distributed ledger that records the provenance of a digital asset</b>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-expanded-width-xs u-image u-image-circle u-preserve-proportions u-image-1" alt="" data-image-width="800" data-image-height="800">
+          <div class="u-preserve-proportions-child" style="padding-top: 100%;"></div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-4" id="carousel_4401">
+      <div class="u-expanded-width u-palette-1-dark-1 u-shape u-shape-rectangle u-shape-1"></div>
+      <div class="u-palette-1-light-2 u-shape u-shape-rectangle u-shape-2"></div>
+      <div class="u-shape u-shape-rectangle u-white u-shape-3"></div>
+      <img class="u-image u-image-1" src="images/-min2.jpg" data-image-width="1200" data-image-height="1048">
+      <div class="u-align-left u-container-style u-group u-similar-fill u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <h2 class="u-text u-text-1"> AI &amp; Digital Platform</h2>
+          <p class="u-large-text u-text u-text-variant u-text-2"><b>Artificial intelligence</b>&nbsp;(AI) is the ability of a computer or a robot controlled by a computer to do tasks that are usually done by humans because they require human intelligence and discernment
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-e1ef"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">copyrights @shyam&nbsp;</p>
+      </div></footer>
   </body>
 </html>
